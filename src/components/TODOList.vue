@@ -13,7 +13,7 @@
             <button type="button" @click="init()">清空</button>
         </form>
         <br/>
-        <table border="1">
+        <table border="1" cellspacing="0">
             <thead>
                 <th>序号</th>
                 <th>姓名</th>

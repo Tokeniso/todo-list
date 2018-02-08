@@ -13,7 +13,7 @@
             <button type="button">清空</button>
         </form>
         <br/>
-        <table border="1">
+        <table border="1" cellspacing="0">
             <thead>
             <th>序号</th>
             <th>姓名</th>
@@ -37,6 +37,11 @@
                 <td>姓名</td>
                 <td>29</td>
                 <td><button>删除</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center">总年龄：</td>
+                <td>71</td>
+                <td></td>
             </tr>
         </table>
     </div>
