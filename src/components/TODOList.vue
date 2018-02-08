@@ -27,22 +27,9 @@
                 <td><button @click="delList(index)">删除</button></td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>张三</td>
-                <td>20</td>
-                <td><button>删除</button></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>李四</td>
-                <td>22</td>
-                <td><button>删除</button></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>姓名</td>
-                <td>29</td>
-                <td><button>删除</button></td>
+                <td colspan="2" style="text-align: center">总年龄：</td>
+                <td>{{sumAge}}</td>
+                <td></td>
             </tr>
         </table>
     </div>
@@ -107,6 +94,15 @@
                     return true;
                 };
                 return false;
+            }
+        },
+        computed:{
+            sumAge:function(){
+                var ages = 0;
+                for (var i in this.list) {
+                    ages += Number(this.list[i].age);
+                }
+                return ages;
             }
         },
         watch:{
